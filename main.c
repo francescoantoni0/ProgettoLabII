@@ -24,7 +24,6 @@ int main(const int argc, char *argv[]) {
 				}
 				break;
 			case 'H':
-				// TODO: controllo sulla correttezza della grandezza passata
 				hash_size = (int) strtol(optarg, NULL, 10);
 				if (hash_size <= 0) {
 					fprintf(stderr, "Invalid hash size: %s\n", optarg);
@@ -32,7 +31,6 @@ int main(const int argc, char *argv[]) {
 				}
 				break;
 			case 'M':
-				// TODO: mettere un controllo sensato
 				n_mutex = (int) strtol(optarg, NULL, 10);
 				if (n_mutex <= 0) {
 					fprintf(stderr, "Invalid number of mutex: %s\n", optarg);
@@ -44,5 +42,11 @@ int main(const int argc, char *argv[]) {
 				fprintf(stdout, help_prompt, optarg);
 				break;
 		}
+		const FILE *file_grafo = fopen(filename_grafo, "r"), *file_archi = fopen(filename_archi, "r");
+		if (file_grafo == NULL || file_archi == NULL) {
+			fprintf(stderr, "Error opening file\n");
+			return 1;
+		}
+
 	}
 }

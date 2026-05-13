@@ -1,0 +1,6 @@
+#ifndef PROGETTOLABII_KRUSKAL_H
+#define PROGETTOLABII_KRUSKAL_H
+
+void kruskal();
+
+#endif //PROGETTOLABII_KRUSKAL_H
