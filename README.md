@@ -33,7 +33,7 @@ Le liste di adiacenza devono essere rappresentate mediante un array vicini di lu
 10 21 7
 ```
 
-allora la lista vicini[10] deve contenere nell'ordine gli elementi 2 4 15 17 21 cioè i nodi adiacenti al nodo 10, ordinati per indice crescente. Naturalmente a sua volta il 10 comparirà nelle liste di adiacenza dei nodi 2, 4, etc. Nelle liste di adiacenza oltre all'identificatore deve essere contenuto il peso dell'arco e un boolean che indica se appartiene alla MSF. Di conseguenza gli elementi delle lista di adiacenza dovranno avere una struttura del tipo:
+allora la lista vicini[10] deve contenere nell'ordine gli elementi `2 4 15 17 21` cioè i nodi adiacenti al nodo 10, ordinati per indice crescente. Naturalmente a sua volta il 10 comparirà nelle liste di adiacenza dei nodi 2, 4, etc. Nelle liste di adiacenza oltre all'identificatore deve essere contenuto il peso dell'arco e un boolean che indica se appartiene alla MSF. Di conseguenza gli elementi delle lista di adiacenza dovranno avere una struttura del tipo:
 
 ```c++
 typedef struct elemento {
