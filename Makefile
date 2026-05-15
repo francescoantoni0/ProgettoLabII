@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -O3 -Wall -Wextra -pthread -std=c11
 TARGET = msf.out
-SRC = main.c, kruskal/kruskal.c
-HDR = datatypes/datatypes.h, kruskal/kruscal.h
+SRC = main.c kruskal/kruskal.c
+HDR = datatypes/datatypes.h kruskal/kruskal.h
 
 all: $(TARGET)
 
